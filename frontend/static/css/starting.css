@@ -1,0 +1,9 @@
+.whole_page{
+   height: fit-content;
+   background: gray;
+   text-decoration-color: whitesmoke;
+}
+
+.loadpage{
+   background: black;
+}
