@@ -24,12 +24,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = secrets.secretkey
 
 # SECURITY WARNING: don't run with debug turned on in production!
-
+dirs = []
 if platform.system() == "Linux":
     DEBUG = False
     ALLOWED_HOSTS = secrets.host
 else:
     DEBUG = True
+    dirs = list(secrets.dirpath)
     ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 # Application definition
@@ -60,7 +61,7 @@ ROOT_URLCONF = 'website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': list(secrets.dirpath),
+        'DIRS': dirs,
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
