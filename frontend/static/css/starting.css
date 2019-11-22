@@ -10,24 +10,42 @@
    background: transparent;
 }
 
-#Intro{
+.Intro{
+   position: absolute;
+   top:0;
+   left: 200pt;
+   height: 100px;
+   width: 100px;
+   z-index: 2;
    /* introduction */
 }
 
-#AboutButton{
+.AboutButton{
+   position: absolute;
+   top:0;
+   left: 400px;
+   height: 100px;
+   width: 100px;
+   offset: 200px;
+   z-index: 2;
    /* about button */
 }
 
-#GitHub {
+.GitHub {
+   position: absolute;
+   height: 100px;
+   width: 100px;
+   offset: 200px;
+   z-index: 2;
    /* github link */
 }
 
-#contactButton {
+.contactButton {
    position: absolute;
-   top: 600px;
-   right: -150%;
-   height: 150px;
-   width: 150px;
+   height: 100px;
+   width: 100px;
+   offset: 200px;
+   z-index: 2;
 }
 
 .star {

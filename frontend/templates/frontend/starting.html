@@ -11,25 +11,27 @@
 
 <body class="loadpage">
 <div class="planetButton">
-    <input alt="GitHub"
+    <input  class="GitHub" alt="GitHub"
             onclick="alert(1);"
             src="{% static 'neptune.png' %}"
             type="image" >
 
-    <input alt="AboutMe"
+    <input class="AboutButton" alt="AboutMe"
             onclick="alert(1);"
             src="{%  static 'titan.png' %}"
             type="image">
 
-        <input alt="Introduction"
-            onclick="alert(1);"
-            src="{% static 'sun.png' %}"
-            type="image" >
+    <input class="Intro"
+           alt="Introduction"
+           onclick="alert(1);"
+           src="{% static 'sun.png' %}"
+           type="image" >
 
-        <input id="contactButton" alt="Contact"
-            onclick="alert(1);"
-            src="{% static 'earth.png' %}"
-            type="image">
+    <input class="contactButton"
+           alt="Contact"
+           onclick="alert(1);"
+           src="{% static 'earth.png' %}"
+           type="image">
     <div class="star">
         <script>prepareCalc()</script>
     </div>
