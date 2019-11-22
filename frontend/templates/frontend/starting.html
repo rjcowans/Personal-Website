@@ -8,11 +8,31 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/starting.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
-<body class="loadpage">
-<div class="whole_page">
-    <span>Richard</span>
-    <span>Cowans</span>
-    <span>Portfolio</span>
-</div>
 
+<body class="loadpage">
+<div class="planetButton">
+    <input alt="GitHub"
+            onclick="alert(1);"
+            src="{% static 'neptune.png' %}"
+            type="image" >
+
+    <input alt="AboutMe"
+            onclick="alert(1);"
+            src="{%  static 'titan.png' %}"
+            type="image">
+
+        <input alt="Introduction"
+            onclick="alert(1);"
+            src="{% static 'sun.png' %}"
+            type="image" >
+
+        <input id="contactButton" alt="Contact"
+            onclick="alert(1);"
+            src="{% static 'earth.png' %}"
+            type="image">
+    <div class="star">
+        <script>prepareCalc()</script>
+    </div>
+</div>
 </body>
+</html>

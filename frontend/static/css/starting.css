@@ -4,6 +4,38 @@
    text-decoration-color: whitesmoke;
 }
 
+.planetButton {
+   position: absolute;
+   z-index: 2;
+   background: transparent;
+}
+
+#Intro{
+   /* introduction */
+}
+
+#AboutButton{
+   /* about button */
+}
+
+#GitHub {
+   /* github link */
+}
+
+#contactButton {
+   position: absolute;
+   top: 600px;
+   right: -150%;
+   height: 150px;
+   width: 150px;
+}
+
+.star {
+   position: absolute;
+   z-index: 0;
+}
+
 .loadpage{
    background: black;
+   position: relative;
 }
