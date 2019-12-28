@@ -1,6 +1,5 @@
 let h = 0;
 let w = 0;
-
 function adjustPlanets() {
     h = window.innerHeight -20;
     w = window.innerWidth - 20;
@@ -12,5 +11,5 @@ function adjustPlanets() {
 }
 
 function arcem() {
-    $('#wrapGitHub').CircleType({radius:250});
+    new CircleType(document.getElementById("wrapGitHub")).radius(100);
 }
