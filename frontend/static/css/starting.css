@@ -50,6 +50,8 @@
 
 #wrapGitHub {
    font-size: 50px;
+    color: ghostwhite;
+    z-index: 4;
 }
 
 #wrapAboutMe{
