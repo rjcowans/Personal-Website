@@ -6,10 +6,10 @@
     <title>Personal Portfolio</title>
     <script src="{% static 'js/space.js' %}"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'css/starting.css' %}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
-<body class="loadpage">
+<body style="background-image: url('{% static 'background.png' %}')" onresize="adjustPlanets()" onload="adjustPlanets()">
 <div class="planetButton">
     <input  class="GitHub" alt="GitHub"
             onclick="alert(1);"
@@ -32,9 +32,6 @@
            onclick="alert(1);"
            src="{% static 'earth.png' %}"
            type="image">
-    <div class="star">
-        <script>prepareCalc()</script>
-    </div>
 </div>
 </body>
 </html>

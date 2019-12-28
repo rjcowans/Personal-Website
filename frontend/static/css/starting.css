@@ -6,16 +6,16 @@
 
 .planetButton {
    position: absolute;
-   z-index: 2;
+   z-index: 3;
    background: transparent;
 }
 
 .Intro{
-   position: absolute;
+   position: relative;
    top:0;
    left: 200pt;
-   height: 100px;
-   width: 100px;
+   height: 500px;
+   width: 500px;
    z-index: 2;
    /* introduction */
 }
@@ -24,36 +24,26 @@
    position: absolute;
    top:0;
    left: 400px;
-   height: 100px;
-   width: 100px;
+   height: 150px;
+   width: 150px;
    offset: 200px;
-   z-index: 2;
+   z-index: 3;
    /* about button */
 }
 
 .GitHub {
    position: absolute;
-   height: 100px;
-   width: 100px;
-   offset: 200px;
-   z-index: 2;
+   height: 200px;
+   width: 250px;
+   offset: 250px;
+   z-index: 3;
    /* github link */
 }
 
 .contactButton {
    position: absolute;
-   height: 100px;
-   width: 100px;
+   height: 175px;
+   width: 175px;
    offset: 200px;
-   z-index: 2;
-}
-
-.star {
-   position: absolute;
-   z-index: 0;
-}
-
-.loadpage{
-   background: black;
-   position: relative;
+   z-index: 3;
 }
