@@ -47,3 +47,11 @@
    offset: 200px;
    z-index: 3;
 }
+
+#wrapGitHub {
+   font-size: 50px;
+}
+
+#wrapAboutMe{
+   font-size: 25px;
+}
