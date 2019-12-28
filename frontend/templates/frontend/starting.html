@@ -7,27 +7,34 @@
     <script src="{% static 'js/space.js' %}"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'css/starting.css' %}">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/peterhry/CircleType/master/dist/circletype.min.js"></script>
 </head>
 
 <body style="background-image: url('{% static 'background.png' %}')" onresize="adjustPlanets()" onload="adjustPlanets()">
 <div class="planetButton">
-    <input  class="GitHub" alt="GitHub"
-            onclick="alert(1);"
+    <a href="https://github.com/rjcowans/" target="_blank"> <input  class="GitHub" alt="GitHub" id="GitHub"
             src="{% static 'neptune.png' %}"
             type="image" >
-
-    <input class="AboutButton" alt="AboutMe"
+        </a>
+    <label for="GitHub">
+         <p id="wrapGitHub" style="color: ghostwhite" >
+             GitHub
+         </p>
+    </label>
+    <input class="AboutButton" alt="AboutMe" id="AboutMe"
             onclick="alert(1);"
             src="{%  static 'titan.png' %}"
             type="image">
 
     <input class="Intro"
+           id="Intro"
            alt="Introduction"
            onclick="alert(1);"
            src="{% static 'sun.png' %}"
            type="image" >
 
     <input class="contactButton"
+           id="contactButton"
            alt="Contact"
            onclick="alert(1);"
            src="{% static 'earth.png' %}"
