@@ -1,43 +1,13 @@
-function prepareCalc() {
-    let h = window.innerHeight -20;
-    let w = window.innerWidth-20;
-    let b = (h * w );
-    let a = Math.floor(b*.75);
-    let randdict = {};
-    randomPos = calculate(randdict, h, w, 0,a);
-    addingToList(randomPos);
-    return false;
-}
+let h = 0;
+let w = 0;
 
-function addPhoto(x, y) {
-    var z = document.createElement("IMG");
-    z.setAttribute("src", "static/spec.png");
-    z.setAttribute("width", "20");
-    z.setAttribute("height", "20");
-    z.setAttribute("alt", "Star_Cord"+x.toString()+"_"+y.toString());
-    $("img").last().offset({top: y, left: x});
-    //$("img").last().css();
-    document.body.appendChild(z)
-}
-
-function addingToList(test) {
-    for (x = 0; x < Object.keys(test).length; x++) {
-        if (Number(test[x])) {
-            //console.log(x);
-            addPhoto(x, test[x]);
-        }
-    }
-
-}
-
-function calculate(randdict, h, w, n,a) {
-    while (n < a) {
-        let tempX = Math.floor(Math.random() * w);
-        let tempY = Math.floor(Math.random() * h);
-        if (randdict[tempX] !== tempY) {
-            randdict[tempX] = tempY;
-            n++
-        }
-    }
-    return randdict;
+function adjustPlanets() {
+    console.log(h);
+    console.log(w);
+    h = window.innerHeight -20;
+    w = window.innerWidth - 20;
+    $(".GitHub").offset({top:h/2,left: 20});
+    $(".AboutButton").offset({top:h-100,left: w/2 });
+    $(".Intro").offset({top:(h/2) - 400 ,left:w/2 - 200 });
+    $(".contactButton").offset({top:(h/2) - 50,left: w - 100 });
 }
