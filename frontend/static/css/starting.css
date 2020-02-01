@@ -14,8 +14,8 @@
    position: relative;
    top:0;
    left: 200pt;
-   height: 500px;
-   width: 500px;
+   height: 400px;
+   width: 400px;
    z-index: 2;
    /* introduction */
 }
@@ -42,8 +42,8 @@
 
 .contactButton {
    position: absolute;
-   height: 175px;
-   width: 175px;
+   height: 200px;
+   width: 200px;
    offset: 200px;
    z-index: 3;
 }
@@ -56,4 +56,18 @@
 
 #wrapAboutMe{
    font-size: 25px;
+   color: ghostwhite;
+   z-index: 4
+}
+
+#wrapIntro{
+   font-size: 50px;
+   color: ghostwhite;
+   z-index: 4
+}
+
+#wrapContact{
+   font-size: 25px;
+   color: ghostwhite;
+   z-index: 4
 }
